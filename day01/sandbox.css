@@ -390,7 +390,7 @@ asimetricos utilizando la propiedad skew pero tampoco soy fanatico de la asimetr
         transition: all 0.3s ease;
         cursor: pointer;
 }
-
+/* Esto es el cuadradito que acompania */
 .toggle-2__button:before {
         position: absolute;
         top: 10px;
@@ -403,7 +403,7 @@ asimetricos utilizando la propiedad skew pero tampoco soy fanatico de la asimetr
         content: "";
         transition: all 0.3s ease;
     }
-
+/* Cuando el input este chequeado, aplica esos valores al ese elemento hermano inmediato y cuando no esta chequeado vuelve a los valores por default*/
 .toggle-2__input:checked + .toggle-2__button {
         background-color: #00b3b4;
         border-color: #00b3b4;

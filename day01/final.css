@@ -225,193 +225,194 @@ button {
   
   
     .final__gradient-button-2 {
-       position: relative;
-       z-index: 1;
-       display: inline-block;
-       padding: 20px 40px;
-       font-size: 1.4rem;
-       box-sizing: border-box;
-       -webkit-box-sizing: border-box;
-       background-color: #e7eef1;
-       border: 4px solid transparent;
-       border-image: linear-gradient(to right, orangered, transparent);
-       border-image-slice: 1;
-       color: orangered;
-       outline: none;
-       -webkit-transition: all 0.3s ease;
-       transition: all 0.3s ease;
-     }
-     .final__gradient-button-2:hover {
-       background-size: 100%;
-       background-image: linear-gradient(to right, orangered, transparent);
-       border-right-style: none;
-       color: white;
-     }
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      padding: 20px 40px;
+      font-size: 1.4rem;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      background-color: #e7eef1;
+      border: 4px solid transparent;
+      border-image: linear-gradient(to right, orangered, transparent);
+      border-image-slice: 1;
+      color: orangered;
+      outline: none;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+    .final__gradient-button-2:hover {
+      background-size: 100%;
+      background-image: linear-gradient(to right, orangered, transparent);
+      border-right-style: none;
+      color: white;
+    }
   
   
   
   /* =========================
-     ANIMATED BUTTONS
+    ANIMATED BUTTONS
      ========================= */
   
-     .final__animated-button-1 {
-       position: relative;
-       display: inline-block;
-       padding: 20px 40px;
-       font-size: 1.4rem;
-       background-color: #00b3b4;
+    .final__animated-button-1 {
+      position: relative;
+      display: inline-block;
+      padding: 20px 40px;
+      font-size: 1.4rem;
+      background-color: #00b3b4;
+
+      background-image: url(pattern.png);
+      background-size: 40px 40px;
+      border: 1px solid #555;
+      color: white;
+      transition: all 0.3s ease;
+    }
+    .final__animated-button-1:hover {
+      -webkit-animation: loading-button-animation 2s linear infinite;
+              animation: loading-button-animation 2s linear infinite;
+    }
+
   
-       background-image: url(pattern.png);
-       background-size: 40px 40px;
-       border: 1px solid #555;
-       color: white;
-       transition: all 0.3s ease;
-     }
-     .final__animated-button-1:hover {
-       -webkit-animation: loading-button-animation 2s linear infinite;
-               animation: loading-button-animation 2s linear infinite;
-     }
-  
-  
-     .final__animated-button-2 {
-       position: relative;
-       display: inline-block;
-       padding: 20px 40px;
-       font-size: 1.4rem;
-       background-color: #00b3b4;
-       background-size: 20px 20px;
-       border: 1px solid #555;
-       color: white;
-       transition: all 0.3s ease;
-     }
-     .final__animated-button-2:after {
-       position: absolute;
-       top: 50%;
-       right: 0.6em;
-       -webkit-transform: translate(0, -50%);
-               transform: translate(0, -50%);
-       content: "»";
-       opacity: 0;
-       transition: all 0.3s ease;
-     }
-     .final__animated-button-2:hover {
-       padding: 20px 60px 20px 20px;
-     }
-     .final__animated-button-2:hover:after {
-       right: 1.2em;
-       opacity: 1;
-     }
-  
-     @-webkit-keyframes loading-button-animation {
-       from {
-         background-position: 0 0;
-       }
-       to {
-         background-position: 40px 0;
-       }
-     }
-  
-     @keyframes loading-button-animation {
-       from {
-         background-position: 0 0;
-       }
-       to {
-         background-position: 40px 0;
-       }
-     }
+    .final__animated-button-2 {
+      position: relative;
+      display: inline-block;
+      padding: 20px 40px;
+      font-size: 1.4rem;
+      background-color: #00b3b4;
+      background-size: 20px 20px;
+      border: 1px solid #555;
+      color: white;
+      transition: all 0.3s ease;
+    }
+    .final__animated-button-2:after {
+      position: absolute;
+      top: 50%;
+      right: 0.6em;
+      -webkit-transform: translate(0, -50%);
+              transform: translate(0, -50%);
+      content: "»";
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+    .final__animated-button-2:hover {
+      padding: 20px 60px 20px 20px;
+    }
+    .final__animated-button-2:hover:after {
+      right: 1.2em;
+      opacity: 1;
+    }
+
+    @-webkit-keyframes loading-button-animation {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: 40px 0;
+      }
+    }
+
+    @keyframes loading-button-animation {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: 40px 0;
+      }
+    }
   
   
   
   /* =========================
-     TOGGLE SWITCH UI BUTTONS
-     ========================= */
+    TOGGLE SWITCH UI BUTTONS
+    ========================= */
+
+    .final__toggle-1 {
+      font-family: Helvetica, Arial, sans-serif;
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 15px 0 0;
+    }
+    .final__toggle-1__input {
+      display: none;
+    }
+    .final__toggle-1__button {
+      position: relative;
+      display: inline-block;
+      font-size: 14px;
+      line-height: 20px;
+      text-transform: uppercase;
+      background-color: #f2395a;
+      border:1px solid #f2395a;
+      color: #ffffff;
+      width: 80px;
+      height: 30px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .final__toggle-1__button:before {
+      position: absolute;
+      top: 6px;
+      left: 40px;
+      right: auto;
+      display: inline-block;
+      height: 20px;
+      padding: 0 3px;
+      background-color: #ffffff;
+      color: #f2395a;
+      content: "off";
+      transition: all 0.3s ease;
+    }
+    .final__toggle-1__input:checked + .final__toggle-1__button {
+      background-color: #00b3b4;
+      border:1px solid #00b3b4;
+    }
+    .final__toggle-1__input:checked + .final__toggle-1__button:before {
+      left: 5px;
+      content: "on";
+      color: #00b3b4;
+    }
   
-     .final__toggle-1 {
-       font-family: Helvetica, Arial, sans-serif;
-       display: inline-block;
-       vertical-align: top;
-       margin: 0 15px 0 0;
-     }
-     .final__toggle-1__input {
-       display: none;
-     }
-     .final__toggle-1__button {
-       position: relative;
-       display: inline-block;
-       font-size: 14px;
-       line-height: 20px;
-       text-transform: uppercase;
-       background-color: #f2395a;
-       border:1px solid #f2395a;
-       color: #ffffff;
-       width: 80px;
-       height: 30px;
-       transition: all 0.3s ease;
-       cursor: pointer;
-     }
-     .final__toggle-1__button:before {
-       position: absolute;
-       top: 6px;
-       left: 40px;
-       right: auto;
-       display: inline-block;
-       height: 20px;
-       padding: 0 3px;
-       background-color: #ffffff;
-       color: #f2395a;
-       content: "off";
-       transition: all 0.3s ease;
-     }
-     .final__toggle-1__input:checked + .final__toggle-1__button {
-       background-color: #00b3b4;
-       border:1px solid #00b3b4;
-     }
-     .final__toggle-1__input:checked + .final__toggle-1__button:before {
-       left: 5px;
-       content: "on";
-       color: #00b3b4;
-     }
   
-  
-     .final__toggle-2 {
-       font-family: Helvetica, Arial, sans-serif;
-       font-size: 1rem;
-       display: inline-block;
-       vertical-align: top;
-       margin: 0 15px 0 0;
-     }
-     .final__toggle-2__input {
-       display: none;
-     }
-     .final__toggle-2__button {
-       position: relative;
-       display: inline-block;
-       line-height: 20px;
-       text-transform: uppercase;
-       background-color: #ffffff;
-       color: #aaaaaa;
-       border: 1px solid #cccccc;
-       padding: 5px 10px 5px 30px;
-       transition: all 0.3s ease;
-       cursor: pointer;
-     }
-     .final__toggle-2__button:before {
-       position: absolute;
-       top: 10px;
-       left: 10px;
-       right: auto;
-       display: inline-block;
-       width: 10px;
-       height: 10px;
-       background-color: #cccccc;
-       content: "";
-       transition: all 0.3s ease;
-     }
-     .final__toggle-2__input:checked + .final__toggle-2__button {
-       background-color: #00b3b4;
-       border-color: #00b3b4;
-       color: #ffffff;
-     }
-     .final__toggle-2__input:checked + .final__toggle-2__button:before {
-       background-color: #ffffff;
-     }
+    .final__toggle-2 {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 1rem;
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 15px 0 0;
+    }
+    .final__toggle-2__input {
+      display: none;
+    }
+    .final__toggle-2__button {
+      position: relative;
+      display: inline-block;
+      line-height: 20px;
+      text-transform: uppercase;
+      background-color: #ffffff;
+      color: #aaaaaa;
+      border: 1px solid #cccccc;
+      padding: 5px 10px 5px 30px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .final__toggle-2__button:before {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      right: auto;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: #cccccc;
+      content: "";
+      transition: all 0.3s ease;
+    }
+    .final__toggle-2__input:checked + .final__toggle-2__button {
+      background-color: #00b3b4;
+      border-color: #00b3b4;
+      color: #ffffff;
+    }
+    .final__toggle-2__input:checked + .final__toggle-2__button:before {
+      background-color: #ffffff;
+    }
