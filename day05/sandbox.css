@@ -1,0 +1,34 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+
+img.image {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans serif;
+    font-size: 0.7em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+}
+/* pseudo elements never appear when there's an actual image */
+img.image:after {
+    /* position absolute para tener esta imagen encima de la otra */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 200px;
+    padding: 10px 20px 10px 45px;
+    border: 1px dashed #888888;
+    /* como acomodar el fondo */
+    background-color: #f0f0f0;
+    background-image: url(noimage.png);
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: 15px 10px;
+    /* att(alt) para pasar el contenido de un atributo es genial, no lo tenia */
+    content: "" attr(alt) " Not Found";
+}
