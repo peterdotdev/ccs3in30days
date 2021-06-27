@@ -1,0 +1,96 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+.layout1 article {
+    float: left;
+    width: 58%;
+}
+
+.layout1 aside {
+    float: right;
+    width: 40%;
+}
+/* que clase de propiedad magica es esa clear O:
+se mueve en base a los elementos flotantes
+por default es clear:none y significa que no se mueve
+Al indicar both significa que si ocupa el mismo espacio
+tanto de un float right como de un float left este baja 
+por debajo del mayor de estos */
+.layout1 footer {
+    clear: both; /* Hay algunos experimentales pero los normales son
+                none | left | right | both */
+}
+
+/* Class sidenav because it's the navigator menu */
+.layout2 aside.sidenav {
+    float: left;
+    width: 23%;
+}
+
+.layout2 aside.sidebar {
+    float: right;
+    width: 23%;
+}
+
+.layout2 article {
+    float: left;
+    margin-left: 2%;
+    width: 50%;
+}
+
+.layout2 footer {
+    clear: both;
+}
+
+
+.layout2 header {
+    display: table;
+    width: 100%;
+}
+
+.layout2 header nav {
+    float: right;
+    width: 78%;
+}
+
+.layout2 header .logo {
+    float: left;
+    width: 20%;
+}
+
+.layout3 header {
+    display: table; /* El contenedor se adapta al height y adapta los elementos a su width*/
+    width: 100%;
+}
+
+.layout3 header nav {
+    float: left;
+    width: 78%;
+}
+
+.layout3 header .logo {
+    float: right;
+    width: 20%;
+}
+
+.layout3 .articles {
+    display: table;
+    width: 100%;
+}
+
+.layout3 article {
+    float: left;
+    margin-right: 3.5%;
+    width: 31%;
+}
+
+.layout3 article:last-child {
+    float: right;
+    margin-right: 0;
+}
+
+.layout footer {
+    clear: both;
+}
